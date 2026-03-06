@@ -1,0 +1,20 @@
+# installation
+npm install -g @angular/cli
+
+# create a project
+ng new angular-tour-of-heroes
+
+# see frontend
+ng serve --open
+
+# generate new component
+ng generate component heroes
+
+# generate new service
+ng generate service hero
+
+#add an Routing Module
+ng generate module app-routing --flat --module=app
+
+# create environment files
+ng generate environments

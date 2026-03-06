@@ -1,0 +1,15 @@
+rsync -avz -e "ssh -i .ssh/homelab" torrenting joel@homelab.breitband.ch:~
+rsync -avz Dowloads joel@homelab.breitband.ch:~
+rsync -avz -e "ssh -i .ssh/homelab" ~/cv/README.md joel@homelab.breitband.ch:~
+
+rsync -avL --exclude '.git/' files Desktop
+rsync -avL --exclude '.git/' files /Volumes/JARVIS/Backup-Git-Annex
+
+# options
+-r --recursive      - Zum rekursiven Synchronisieren der gesamten Verzeichnisstruktur
+-l --links          - Zum Synchronisieren von symbolischen Links
+-p --perms          - Zum Beibehalten von Berechtigungen
+-t --times          - Zum Beibehalten von Zeitstempeln
+-g --group          - Zum Beibehalten der Gruppeneigentümerschaft
+-o --owner          - Zum Beibehalten des Eigentümers der Dateien
+-D --devices        - Zum Synchronisieren von Gerätedateien

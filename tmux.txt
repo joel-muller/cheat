@@ -1,0 +1,42 @@
+# create new session with a first window
+tmux new-session -d -s <sessionname> -n <windowname>
+
+# add new window to a session
+tmux new-window -t <sessionname> -n <windowname>
+Ctrl-b c
+
+# go into the session
+tmux attach -t <sessionname>
+
+# kill the session
+tmux kill-session -t <sessionname>
+:kill-session
+
+# rename a window
+tmux rename-window -t <sessionname>:<window_number_or_name> <newname>
+Ctrl-b ,
+
+# kill a window
+tmux kill-window -t <sessionname>:<window_number_or_name>
+Ctrl-b x
+
+# go out of a session
+tmux detach
+Ctrl-b d
+
+# send a command in a tmux session
+tmux send-keys -t "$SESSION":"$name" "cd $dir" C-m
+
+# split window horizontally
+tmux split-window -h
+Ctrl-b %
+
+# split window vertically
+tmux split-window -v
+Ctrl-b "
+
+# go to copy mode
+Ctrl + b [
+
+# exit copy mode
+q
