@@ -1,0 +1,5 @@
+# Organizing a go module
+https://go.dev/doc/modules/layout
+
+# Start a go project with:
+go mod init

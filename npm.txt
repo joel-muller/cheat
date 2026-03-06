@@ -1,0 +1,17 @@
+# installation
+brew install node
+
+# start a project
+npm init -y
+
+# install dependency
+npm install --save-dev --save-exact prettier
+
+# update all outdated packages
+npm update
+
+# see outdated packages
+npm outdated
+
+# update specific package
+npm update @auth0/angular-jwt

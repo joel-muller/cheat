@@ -1,0 +1,1 @@
+iconv -f ISO-8859-1 -t UTF-8 Arrival.2016.de.srt -o Arrival.2016.new.srt
