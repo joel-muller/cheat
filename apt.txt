@@ -1,0 +1,2 @@
+# remove an package and also its configuration files
+sudo apt remove --purge

@@ -1,0 +1,8 @@
+# install homebrew here
+https://brew.sh
+
+# uninstall a formula
+brew uninstall --force <formula>
+
+# install cask to a different path
+brew install --cask --appdir=~/apps iTerm
