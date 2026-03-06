@@ -1,0 +1,6 @@
+# installation
+brew install ocrmypdf
+
+# usage
+ocrmypdf input.pdf output.pdf --force-ocr
+ocrmypdf -l eng+deu input.pdf output.pdf

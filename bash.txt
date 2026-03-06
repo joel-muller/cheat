@@ -23,3 +23,10 @@ $var or ${var}               - Call a variable.
 \                            - Escape: take next sign as literal, not as comment.
 ''                           - Single quotes: do not expand variable, use literal variable name.
 ""                           - Double quotes: expand variable name (variables inside are resolved).
+
+# connect comands together
+;                    - Run both commands for sure
+&&                   - Run next command only if the first succeeded
+||                   - Run next command only if the first failed
+|                    - Pipe output from one command to another (e.g., cat file | wc -l)
+$(...)               - Command substitution: run a command within another (e.g., mv hello.txt $(date +%s)_hello.txt)

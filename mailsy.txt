@@ -1,0 +1,8 @@
+# installation
+brew install mailsy
+
+# generate mails
+mailsy g
+
+# read mail
+mailsy m

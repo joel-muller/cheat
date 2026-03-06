@@ -1,0 +1,4 @@
+# Youtube downloader Alternative Seite --> https://ytmp3.nu/aIBN/
+brew install yt-dlp
+
+yt-dlp "https://www.youtube.com/watch?v=uHgt8giw1LY"

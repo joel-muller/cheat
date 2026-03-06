@@ -1,0 +1,10 @@
+# Format HDD in Linux
+lsblk
+lsblk -f
+sudo mkfs.ext4 /dev/sda
+sudo mkdir -p /mnt/hdd01
+sudo mount /dev/sda /mnt/hdd01
+lsblk
+
+
+# Unmount wurde nicht gemacht, aber das ist auch nicht nötig wenn das ganze schon nicht mehr gemounted ist. Ich habe auch keine partition gemacht was mir aber empfohlen wurde. Vielleicht werde ich das aber machen nächstes mal

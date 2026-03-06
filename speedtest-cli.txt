@@ -1,0 +1,4 @@
+# Speed test
+brew install speedtest-cli
+
+speedtest-cli
