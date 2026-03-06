@@ -1,0 +1,4 @@
+# manages ssh keys
+ssh-agent
+eval $(ssh-agent)
+ssh-add .ssh/secondkey

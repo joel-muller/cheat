@@ -1,0 +1,2 @@
+# Connect with the following command and then use it like a normal ftp server
+sftp remoteuser@host

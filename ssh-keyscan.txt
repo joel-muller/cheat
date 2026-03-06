@@ -1,0 +1,2 @@
+# see public keys of a server
+ssh-keyscan

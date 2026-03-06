@@ -1,0 +1,3 @@
+scp -i ~/.ssh/homelab /local/path/to/file joel@homelab.breitband.ch:~
+
+# use -R for recursive (directory)

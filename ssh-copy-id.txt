@@ -1,0 +1,2 @@
+# Copy public key to server on port 2222
+ssh-copy-id -i ~/.ssh/key.pub -p 2222 root@localhost
