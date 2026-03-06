@@ -1,0 +1,5 @@
+# installation
+sudo apt install figlet
+
+# usage
+figlet Hello

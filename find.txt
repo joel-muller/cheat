@@ -1,0 +1,22 @@
+# find options
+-name                   - Search for files/directories by name (case-sensitive).
+-iname                  - Search for files/directories by name (case-insensitive).
+-path                   - Match files/directories by their full path.
+-type                   - Search for types (e.g., d for directories, f for files, fd for both).
+-size [size]            - Find items larger or smaller than the specified size (e.g., +500k, -10M).
+-maxdepth [n]           - Limit the search to n levels of directories.
+-exec [command] {} \;   - Execute a command on each found file or directory. {} reuses every found item.
+-empty                  - Find empty files or directories.
+-delete                 - Delete the found items.
+-print                  - Print the found items to the output.
+-daystart               - Measure times (e.g., -mtime) from the start of the day.
+-mtime [n]              - Find items modified n days ago (-n for within last n days).
+-user [username]        - Search for items owned by a specific user.
+-group [groupname]      - Search for items belonging to a specific group.
+-perm [mode]            - Search for items with specific permissions (e.g., 442).
+! or not                - Exclude items matching a specific name pattern.
+-and                    - Combine conditions; all must be true (default behavior when chaining conditions).
+-or                     - Combine conditions; at least one must be true.
+-cvf                    - Create a tar archive of found files.
+
+# Instead of find, you can also use fd, which supports regular expressions

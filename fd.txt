@@ -1,0 +1,2 @@
+# find all files with with python ending
+fd '.*py'

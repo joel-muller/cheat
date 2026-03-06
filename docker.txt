@@ -1,0 +1,38 @@
+# installation
+sudo apt install docker
+
+# create docker compose file
+touch compose.yaml
+
+# see docker images
+docker ps
+
+# see logs of docker container
+docker logs <containerid or name>
+
+# go into docker shell
+docker exec -it <container_name_or_id> bash
+
+# see docker images
+docker image ls
+docker image rm imagename
+
+# see docker volumes and remove them
+docker volume ls
+docker volume rm volumename
+
+# build everything in docker compose
+docker compose build
+
+# start docker compose and start in deamon
+docker compose up
+docker compose up -d
+
+# stop deamon docker compose
+docker compose down
+
+# stop deamon docker compose and remove also the images
+docker compose down --rmi all
+
+# port mapping
+docker run -p <host_port>:<container_port> image_name

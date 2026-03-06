@@ -1,0 +1,5 @@
+# see how big a file or folder is
+sudo du -sh hdd01/
+
+# see all folders in the depth of 1
+du -h --max-depth=1 /path/to/folder

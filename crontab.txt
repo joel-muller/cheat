@@ -1,0 +1,5 @@
+# change the actual crontabs
+crontab -e
+
+# see the acutal crontabs
+crontab -l
