@@ -1,0 +1,5 @@
+# installation
+sudo apt install toilet
+
+# usage
+toilet Hello
