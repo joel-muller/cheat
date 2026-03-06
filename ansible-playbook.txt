@@ -1,0 +1,11 @@
+# syntax check playbook
+ansible-playbook --syntax-check webserver-example/site.yml
+
+# run playbook with inventory
+ansible-playbook -i inventory.yml webserver-example/site.yml
+
+# run playbook with vault password prompt
+ansible-playbook -i inventory.yml webserver-example/playbook-vars-httpd.yml --ask-vault-pass
+
+# simulate playbook run (no changes)
+ansible-playbook -i inventory.yml webserver-example/site.yml --check

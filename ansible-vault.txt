@@ -1,0 +1,20 @@
+# create encrypted file
+ansible-vault create webserver-example/vars/secret.yml
+
+# view encrypted file
+ansible-vault view webserver-example/vars/secret.yml
+
+# edit encrypted file
+ansible-vault edit webserver-example/vars/secret.yml
+
+# encrypt existing file
+ansible-vault encrypt webserver-example/vars/plain.yml
+
+# decrypt file
+ansible-vault decrypt webserver-example/vars/secret.yml
+
+# change vault password
+ansible-vault rekey webserver-example/vars/secret.yml
+
+# vault help
+ansible-vault --help

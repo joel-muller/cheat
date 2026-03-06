@@ -1,0 +1,23 @@
+# list all managed hosts
+ansible all -i inventory.ini --list-hosts
+
+# list hosts in group raleigh
+ansible raleigh -i inventory.ini --list-hosts
+
+# list hosts in group us
+ansible us -i inventory.ini --list-hosts
+
+# list ungrouped hosts
+ansible ungrouped -i inventory.ini --list-hosts
+
+# list hosts in group europe (after editing inventory)
+ansible europe -i inventory.ini --list-hosts
+
+# ping all hosts (test connection)
+ansible all -i inventory.yml -m ping
+
+# run shell command on all hosts
+ansible all -i inventory.yml -m shell -a "uptime"
+
+# run command on specific group
+ansible webservers -i inventory.yml -m command -a "df -h"
