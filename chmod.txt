@@ -1,0 +1,37 @@
+# First letter
+.       - File
+d       - Directory
+l       - Symbolischer Link |
+b       - Blockorientierte Gratedatei |
+s       - Unix Domainsocket |
+p       - Named pipe Datei |
+c       - Zeichenorientierte Geratedatei |
+
+# read write excecute order
+1. user
+2. group
+3. other
+
+# Rights in Numbers
+4 (2^2)     - read
+2 (2^1)     - write
+1 (2^0)     - execute
+
+# change rights of file/directory
+chmod WerWieWas file/directory
+
+# Wer -> u (user), g (group), o (other), a (all)
+# Wie -> x (hinzugfugen), - (entfernen), = (setzen)
+# Was -> r (read), w (write), e (execute)
+
+# Examples:
+chmod u+x file              - Anderung User (Eigentumer) erhalt execute rechte
+chmod g-r,o-r file          - Änderung: Gruppe und Rest bekommen Leserechte entzogen
+chmod a+r file              - Änderung: Alle erhalten Leserechte
+chmod a+rx file             - Änderung: Alle erhalten Leserechte und Ausfuhrrechte
+
+# Absolute change -> Sum of 4 (read), 2 (write), 1 (execute)
+chmod OwnerGroupRest file/directory
+
+# Examples:
+chmod 600 file              - User gets write and read rights

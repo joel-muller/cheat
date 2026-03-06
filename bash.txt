@@ -1,0 +1,25 @@
+# start a bash script with
+#!/usr/bin/env bash
+#!/bin/bash
+
+# want that script fails after something fails
+set -euo pipefail
+
+# common variables
+$HOSTNAME                    - Hostname of the machine.
+$USER, $USERNAME, $LOGNAME   - Name of the user connected to the session.
+$PATH                        - List of directories searched by the interpreter when no path is specified for a command.
+$PWD                         - Current directory, updated each time the `cd` command is executed.
+$HOME                        - Login directory.
+$$                           - Process ID of the script execution.
+$?                           - Return code of the last executed command.
+$1 .. $9                     - First 9 arguments of a function call.
+$@                           - All function call arguments.
+$#                           - Counts how many arguments were given to a call.
+$_                           - Last argument.
+$(...)                       - Expansion with output.
+<(...)                       - Expansion with temp file.
+$var or ${var}               - Call a variable.
+\                            - Escape: take next sign as literal, not as comment.
+''                           - Single quotes: do not expand variable, use literal variable name.
+""                           - Double quotes: expand variable name (variables inside are resolved).
