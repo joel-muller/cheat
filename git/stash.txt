@@ -1,0 +1,25 @@
+# stash the changes
+git stash
+
+# stash the changes with a name
+git stash -m "jdsl v0 almost working"
+
+# pop the lates stashed changes
+git stash pop
+
+# see all things youve stashed
+git stash list
+
+# applying stash without dropping it
+git stash apply
+
+# dropping stash without applying it
+git stash drop
+
+# Apply the third (0, 1, 2) most recent stash
+git stash apply stash@{2}
+
+# Remove the third most recent stash
+git stash drop stash@{2}
+
+# Note you can also have stash conflicts, just resolve them like they are a merge conflict

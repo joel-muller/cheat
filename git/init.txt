@@ -1,0 +1,2 @@
+# init a bare repositiry with only the .git folder
+git init --bare

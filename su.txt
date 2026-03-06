@@ -1,0 +1,9 @@
+# Startet eine Shell (Interpreter) als Root im Kontext des aktuellen Nutzers (gleiche Umgebungsvariablen, gleiches aktuelles Verzeichnis)
+su
+
+# Startet eine neue Shell als Root (neuer Login). Arbeitsverzeichnis ändert sich. Neue Umgebungsvariablen. Shell des Root-Nutzers
+su -
+su -l
+
+# Startet eine neue Shell als Benutzer labadmin. Vollständige neue Shell / neuer Login. Neue Umgebungsvariablen etc
+su -l labadmin

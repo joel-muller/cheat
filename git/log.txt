@@ -1,0 +1,9 @@
+# see the lastest commits
+git log
+git log --decorate --oneline --graph
+git log --decorate=full
+git log --decorate=no
+git log --oneline
+git log --oneline --graph --all
+git log --oneline --decorate --graph --parents
+git log origin/primeagen

@@ -1,0 +1,8 @@
+# show the changes between the working tree and the last commit
+git diff
+
+# show the differences between the previous commit and the current state, including the last commit and uncommitted changes
+git diff HEAD~1
+
+# show the change between two commits
+git diff COMMIT_HASH_1 COMMIT_HASH_2

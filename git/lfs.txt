@@ -1,0 +1,16 @@
+# Git Large File storage
+brew install git-lfs
+sudo apt-get install git-lfs
+
+# Install it once per machine in the home folder
+git lfs install
+
+# Then in every repository
+git lfs track "*.psd"
+git add .gitattributes
+git add file.psd
+git commit -m "Add design file"
+git push origin main
+
+# Check out the files which are tracked in git lfs
+git lfs ls-files

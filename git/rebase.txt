@@ -1,0 +1,39 @@
+Before:
+A - B - C    main
+   \
+    D - E    feature_branch
+After:
+A - B - C         main
+         \
+          D - E   feature_branch
+git rebase main
+# you still have to merge afterwards. When you rebase before, you will get a fast forward merge
+
+# Rebase conflicts If git rebase puts you into a other branch, just resolve the conflicts and do
+git rebase
+vim <file>
+git add .
+git rebase --continue
+
+# Squashing (n is the number of commits i want to squash)
+git rebase -i HEAD~n
+git rebase -i --root
+
+# Reword Commit message The same as squashing but instead of pick, enter reword
+
+# You know how with merge conflicts you commit the resolution, but with rebase conflicts you --continue the resolution
+
+# Rerere
+git config --local rerere.enabled true
+
+# When the following message is comming on a merge conflict:
+Resolved 'customers/favs.md' using previous resolution.
+Could not apply 167d0d5... # K: add favs from favs branch
+
+git add .
+git rebase --continue
+
+
+# How to Undo the Screw-Up, If you accidentally commit the resolution of a rebase conflict, just:
+git reset --soft HEAD~1
+# The --soft flag will keep your changes, and just undo the commit. Then you can simply --continue the rebase as normal.

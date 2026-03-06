@@ -1,0 +1,14 @@
+# Startet eine neue Shell (neuer Login). Arbeitsverzeichnis ändert sich… siehe su - oder su –l. Ich bin root und im root verzeichniss
+sudo -i
+
+# Startet eine Shell im Kontext des aktuellen Nutzers, siehe `su`, behält arbeitsverzeichniss bei. Ich bin root aber in meinem Verzeichniss
+sudo -s
+
+# Startet eine neue Shell als Benutzer labadmin, siehe su -l labadmin
+sudo -u labadmin -i
+
+# Sollte gleiches wie oben dran sein, bin mir aber nicht ganz sicher
+sudo -i -u sysuser
+
+# Ruft letzter call mit sudo vorne dran auf
+sudo !!

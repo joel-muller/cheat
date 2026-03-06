@@ -1,0 +1,24 @@
+# 1. Start the bisect 
+git bisect start
+
+# 2. Select a "good" commit with (a commit where you're sure the bug wasn't present)
+git bisect good <commitish>
+
+# 3. Select a bad commit via 
+git bisect bad <commitish>` (a commit where you're sure the bug was present)
+
+# 4. Git will checkout a commit between the good and bad commits for you to test to see if the bug is present
+
+# 5. Execute to say the current commit is good or bad
+git bisect good
+git bisect bad
+
+# 6. Loop back to step 4 (until git bisect completes)
+
+# 7. See the commit hash and revert to that hash if needed
+
+# 8. Exit the bisect mode
+git bisect reset
+
+# you can also bisect with a script
+git bisect run ./scripts/bisect.sh

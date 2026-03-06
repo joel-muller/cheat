@@ -1,0 +1,22 @@
+# Delete a branch
+git branch --delete <branchname>
+
+# see remote branches
+git branch -r
+
+# see remote and local branches
+git branch -a
+
+# switch to remote branch
+git switch -t
+
+# Rename a branch
+git branch -m oldname newname
+
+# Create a branch
+git branch my_new_branch && git switch my_new_branch
+git branch my_new_branch && git checkout my_new_branch
+git switch -c my_new_branch
+git switch -c my_new_branch 280e0e399de71b40d68a18f8cd894e0997ddf1cc
+git branch -d add_classic
+git branch -D branchname

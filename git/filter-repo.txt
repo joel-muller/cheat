@@ -1,0 +1,28 @@
+# Merge two reposotories into a mono repo
+
+# 1. install git filter repo
+brew install git-filter-repo
+
+# 2. for every repository, you do:
+git clone https://github.com/yourusername/repoA.git repoA-temp
+cd repoA-temp
+git filter-repo --to-subdirectory-filter repoA
+
+# 3. create following repository
+mkdir main-repo
+cd main-repo
+git init
+
+# 4. for every repository, you do:
+git remote add repoA ../repoA-temp
+git fetch repoA
+git merge repoA/main --allow-unrelated-histories
+
+
+# Change Commiter date to author date
+git filter-repo --force --commit-callback '
+commit.committer_date = commit.author_date
+'
+
+# check it
+git log --pretty=fuller

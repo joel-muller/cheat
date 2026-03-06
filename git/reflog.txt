@@ -1,0 +1,10 @@
+# With reflog, you can see where the head was before and you can restore a deleted branch. For that find the hash of the previous branch in reflog at HEAD@{1}
+git reflog
+git cat-file -p <commit sha>
+git cat-file -p <tree sha>
+git cat-file -p <blob sha> > slander.md
+git add .
+git commit -m "B: recovery"
+
+# or just do this
+git merge HEAD@{1}

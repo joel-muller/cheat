@@ -1,0 +1,5 @@
+# switches to branch "mybranch"
+git checkout mybranch
+
+# restores file "myfile.txt" from HEAD
+git checkout -- myfile.txt

@@ -1,0 +1,8 @@
+git push origin main --force
+git push origin main
+
+# push a local branch to a remote with a different name
+git push origin <localbranch>:<remotebranch>
+
+# You can also delete a remote branch by pushing an empty branch to it:
+git push origin :<remotebranch>

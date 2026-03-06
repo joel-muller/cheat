@@ -1,0 +1,20 @@
+# Add things to config in command line 
+git config --add --global user.name "ThePrimeagen"
+git config --add --global user.email "the.primeagen@aol.com"
+
+# Check config
+git config --list --local
+git config --list --global
+
+# See and remove things out of config
+git config --get <key>
+git config --unset <key>
+git config --unset-all user.name
+git config --remove-section alias
+
+# Locations for gitconfig (the deeper the higher priority)
+
+- system: /etc/gitconfig
+- global: ~/.gitconfig
+- local .git/config
+- worktree .git/config.worktree

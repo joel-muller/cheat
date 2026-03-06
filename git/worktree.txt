@@ -1,0 +1,7 @@
+git worktree list
+git worktree add <path> [<branch>]
+git worktree remove WORKTREE_NAME
+
+# delete the directory manually and remove it with
+git worktree prune
+# from the refference git repo

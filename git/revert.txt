@@ -1,0 +1,2 @@
+# find the commit hash and revert to that
+git revert hash

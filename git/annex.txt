@@ -1,0 +1,30 @@
+# sync git annex
+git annex sync
+git annex sync --cleanup
+
+# setup special remote
+git annex initremote drive type=rclone encryption=none rcloneremotename=drive
+git annex initremote drive type=rclone encryption=shared rcloneremotename=drive
+
+# setup special remote on every other device after initremote
+git annex enableremote drive
+
+# move every file from laptop to drive
+git annex copy --to drive --all
+
+# show all files which dont have two copies
+git annex find --not --copies=2
+
+
+
+# on linux, the apt package doesnt have rclone, so you need to install this binary
+wget https://downloads.kitenet.net/git-annex/linux/current/git-annex-standalone-amd64.tar.gz
+tar xzf git-annex-standalone-amd64.tar.gz
+mv git-annex-linux /opt/git-annex
+echo 'export PATH=$PATH:/opt/git-annex
+source ~/.bashrc
+
+# similar has to be rclone for git annex
+wget https://downloads.rclone.org/v1.72.1/rclone-v1.72.1-linux-amd64.zip
+unzip rclone-v1.72.1-linux-amd64.zip
+mv rclone /usr/local/bin

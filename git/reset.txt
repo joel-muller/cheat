@@ -1,0 +1,7 @@
+# Soft reset, just stages the thing which where previously commited and you can recommit
+# also good for squashing
+git reset --soft COMMITHASH
+
+# Hard reset, removes everything you done and commited until the hash
+git reset --hard HEAD
+git reset --hard COMMITHASH
