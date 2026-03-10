@@ -6,3 +6,6 @@ brew uninstall --force <formula>
 
 # install cask to a different path
 brew install --cask --appdir=~/apps iTerm
+
+# see the path of brew
+brew --prefix

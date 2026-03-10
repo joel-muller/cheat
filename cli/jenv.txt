@@ -1,3 +1,6 @@
+# verify the jenv installation
+jenv doctor
+
 # enable the export plugin (restart the shell after this)
 jenv enable-plugin export
 
@@ -9,6 +12,7 @@ jenv versions
 
 # set new global java version
 jenv global oracle64-1.6.0.39
+jenv global 25
 
 # check version
 java --version
