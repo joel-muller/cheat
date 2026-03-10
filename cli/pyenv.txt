@@ -1,0 +1,19 @@
+# install a python version
+pyenv install 3.10.4
+pyenv uninstall 3.10.4
+pyenv switch 3.10.4
+pyenv versions
+
+# gives the list of all available versions
+pyenv install 3.10.4
+
+# select python version globally
+pyenv global 3.10
+
+# create a pyenv virtual environment
+pyenv virtualenv 2.7.10 my-virtual-env
+
+# usage
+pyenv activate my-virtual-env
+pyenv deactivate
+pyenv uninstall my-virtual-env
