@@ -26,4 +26,5 @@ gpg --import key.gpg
 gpg --import key.asc
 
 # delete key
-gpg --delete-key <KEY ID>
+gpg --delete-keys <KEY ID>
+gpg --delete-secret-keys <KEY ID>
