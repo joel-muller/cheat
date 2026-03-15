@@ -14,12 +14,12 @@ gpg --edit-key <KEY ID>
 # gpg> save
 
 # export the keys in gpg format
-gpg -o key.gpg --export <KEY ID>
-gpg -o key.gpg --export-secret-keys <KEY ID>
+gpg -o pub-key.gpg --export <KEY ID>
+gpg -o sec-key.gpg --export-secret-keys <KEY ID>
 
 # export the keys in ascii format
-gpg -o key.asc --armor --export <KEY ID>
-gpg -o key.asc --armor --export-secret-keys <KEY ID>
+gpg -o pub-key.asc --armor --export <KEY ID>
+gpg -o sec-key.asc --armor --export-secret-keys <KEY ID>
 
 # import key
 gpg --import key.gpg
