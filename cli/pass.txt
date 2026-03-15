@@ -1,0 +1,34 @@
+# set up a passwordstore
+pass init <KEY ID>
+
+# add a new password (interactive)
+pass insert <path/to/password>
+
+# generate a random password and store it
+pass generate <path/to/password> [length]
+pass generate <path/to/password> [length] --no-symbols
+
+# show a password
+pass show <path/to/password>
+
+# copy a password to clipboard (auto clears after 45s)
+pass -c <path/to/password>
+
+# edit a password manually
+pass edit <path/to/password>
+
+# remove a password
+pass rm <path/to/password>
+
+# list stored passwords
+pass
+
+# use otp
+pass otp [--clip,-c] pass-name
+
+# sync password store with git
+pass git init
+pass git add .
+pass git commit -m "message"
+pass git push
+pass git pull

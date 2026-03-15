@@ -1,0 +1,29 @@
+# generate a keypair
+gpg --full-generate-key
+
+# list public keys
+gpg --list-keys
+
+# list secret keys
+gpg --list-secret-keys
+
+# trusting a key
+gpg --edit-key <KEY ID>
+# In the interactive prompt:
+# gpg> trust
+# gpg> save
+
+# export the keys in gpg format
+gpg -o key.gpg --export <KEY ID>
+gpg -o key.gpg --export-secret-keys <KEY ID>
+
+# export the keys in ascii format
+gpg -o key.asc --armor --export <KEY ID>
+gpg -o key.asc --armor --export-secret-keys <KEY ID>
+
+# import key
+gpg --import key.gpg
+gpg --import key.asc
+
+# delete key
+gpg --delete-key <KEY ID>
