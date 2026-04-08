@@ -1,0 +1,5 @@
+# fetch the lastes origin branches
+git fetch
+
+# fetch the origin branches and delete the one which dont exist anymore
+git fetch -p
