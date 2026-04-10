@@ -24,6 +24,7 @@ gpg -o sec-key.asc --armor --export-secret-keys <KEY ID>
 # import key
 gpg --import key.gpg
 gpg --import key.asc
+gpg --import pub-key.asc sec-key.asc
 
 # delete key
 gpg --delete-keys <KEY ID>

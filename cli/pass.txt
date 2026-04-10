@@ -32,3 +32,6 @@ pass git add .
 pass git commit -m "message"
 pass git push
 pass git pull
+
+# naming convention
+https://github.com/passff/passff?tab=readme-ov-file#multi-line-format
