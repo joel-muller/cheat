@@ -1,0 +1,5 @@
+# encrypt
+base64 -i key -o git-crypt-key.asc
+
+# decrypt
+base64 -d -i git-crypt-key.asc -o key
