@@ -2,6 +2,7 @@
 git-crypt init
 
 # Specify files to encrypt by creating a .gitattributes file
+touch .gitattributes
 secretfile filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
 secretdir/** filter=git-crypt diff=git-crypt

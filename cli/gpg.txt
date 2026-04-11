@@ -29,3 +29,7 @@ gpg --import pub-key.asc sec-key.asc
 # delete key
 gpg --delete-keys <KEY ID>
 gpg --delete-secret-keys <KEY ID>
+
+# convert a bin key to a acscii key (used in git crypt)
+gpg --armor --symmetric key > git-crypt-key.asc
+gpg --decrypt git-crypt-key.asc > key
