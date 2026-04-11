@@ -1,0 +1,13 @@
+# Configure a repository to use git-crypt
+git-crypt init
+
+# Specify files to encrypt by creating a .gitattributes file
+secretfile filter=git-crypt diff=git-crypt
+*.key filter=git-crypt diff=git-crypt
+secretdir/** filter=git-crypt diff=git-crypt
+
+# export a symmetric secret key, which you must securely convey to collaborators (GPG is not required, and no files are added to your repository)
+git-crypt export-key /path/to/key
+
+# unlock a repository with git crypt
+git-crypt unlock /path/to/key
