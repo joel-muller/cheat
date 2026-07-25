@@ -9,3 +9,19 @@ brew install --cask --appdir=~/apps iTerm
 
 # see the path of brew
 brew --prefix
+
+# install packages from Brewfile
+brew bundle
+
+# Explicit install
+brew bundle install
+brew bundle install --file=Brewfile
+
+# create Brewfile from installed packages
+brew bundle dump --force
+
+# check if everything is installed
+brew bundle check
+
+# remove packages not in Brewfile
+brew bundle cleanup --force
