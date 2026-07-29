@@ -1,0 +1,4 @@
+just <cmd>
+
+# how file is defined
+https://github.com/casey/just/blob/master/README.md#recipes

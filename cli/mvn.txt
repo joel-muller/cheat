@@ -1,0 +1,5 @@
+# remove old build output, start from a fresh state and also remove snapshots
+mvn clean install -U
+
+# run springboot with profile
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
