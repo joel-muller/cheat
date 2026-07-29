@@ -7,11 +7,42 @@ rg "error" ./src
 rg "^ERROR.*failed"
 
 # options reference
--i         # ignore case
--w         # match whole words
--n         # show line numbers
--l         # print matching file names
--c         # count matches per file
---hidden   # search hidden files
--u         # reduce filtering
--uu        # search all files
+-i             # ignore case
+-w             # match whole words
+-n             # show line numbers
+-l             # print matching file names
+-L             # follow symlinks
+-c             # count matches per file
+--hidden       # search hidden files
+-u             # reduce filtering
+-uu            # search all files ignore gitignore
+-t             # search filetypses
+-T             # exclude a filetype
+-o             # show only matching text
+-F             # fixed string search (no regex)
+--max-depth    # max depth of filetree
+-g             # search glob patterns
+-e             # add search pattern
+-o             # print only matches
+
+# regex patterns
+[]                    # character class
+[^]                   # negated character class
+.                     # any character except newline
+*                     # 0 or more
++                     # 1 or more
+?                     # 0 or 1
+{n}                   # exactly n
+{n,m}                 # between n and m
+^                     # start of line
+$                     # end of line
+|                     # OR
+()                    # grouping
+\d                    # digit
+\D                    # not a digit
+\w                    # word character
+\W                    # not a word character
+\s                    # whitespace
+\S                    # not whitespace
+\b                    # word boundary
+.*                    # any characters

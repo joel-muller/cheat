@@ -1,2 +1,20 @@
 # find all files with with python ending
 fd '.*py'
+
+# fd options
+pattern                     - Search for files/directories by name using a regular expression (case-sensitive).
+-i, --ignore-case           - Search for files/directories by name (case-insensitive).
+-p, --full-path             - Match files/directories by their full path.
+-t, --type [type]           - Search for types (e.g., f for files, d for directories, l for symlinks).
+-S, --size [size]           - Find items larger or smaller than the specified size (e.g., +500k, -10M).
+-d, --max-depth [n]         - Limit the search to n levels of directories.
+-x, --exec [command]        - Execute a command on each found file or directory.
+-t e                        - Find empty files or directories.
+-x rm                       - Delete the found items (no direct delete option).
+-print                      - Print the found items to the output (default behavior).
+--changed-within [time]     - Find items modified within a time period (replacement for -mtime).
+--owner [username]          - Search for items owned by a specific user.
+-E [pattern]                - Exclude items matching a specific pattern.
+-and                        - Combine conditions; all must be true (default behavior).
+-or                         - Use regular expression OR (`|`) to match multiple patterns.
+tar                         - Create a tar archive from found files (no direct equivalent to -cvf).
