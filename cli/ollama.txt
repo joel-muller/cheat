@@ -1,0 +1,5 @@
+ollama serve
+ollama list
+ollama run llama3:8b
+ollama run llama3:8b "Explain Kubernetes"
+echo "Explain Kubernetes" | ollama run llama3:8b
