@@ -1,0 +1,7 @@
+# ffs, subsync and ffsubsync all work as entrypoints:
+
+# sync with video
+ffs video.mp4 -i unsynchronized.srt -o synchronized.srt
+
+# sync with other file
+ffsubsync reference.srt -i unsynchronized.srt -o synchronized.srt
