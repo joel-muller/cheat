@@ -1,0 +1,20 @@
+# Create a new Lima instance from the "docker" template
+limactl create template:docker
+
+# Create and start a new Lima instance from the "k8s" template
+limactl start template:k8s
+
+# List all Lima instances and their current status
+limactl list
+
+# Start an existing Lima instance named "docker"
+limactl start docker
+
+# Open an interactive shell inside the "docker" Lima instance
+limactl shell docker
+
+# Stop the running "docker" Lima instance
+limactl stop docker
+
+# Delete the "docker" Lima instance
+limactl delete docker
