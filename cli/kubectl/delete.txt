@@ -3,3 +3,6 @@ kubectl delete -f deployment.yaml
 
 # delete a deployment
 kubectl delete deployment DEPLOYMENT
+
+# delete everything in namespace
+kubectl delete all --all
